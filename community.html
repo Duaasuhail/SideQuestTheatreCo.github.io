@@ -1,70 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta charset="utf-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
   <title>Community Content | Side Quest Theatre Co.</title>
-  <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="style.css" >
 </head>
 <body>
 
-  <div class="announcement-bar">
-    <span>Call Board</span>
-    Upload costume concepts, pixel-art set moodboards, and rehearsal clips to our Creative Process Archive below!
-  </div>
-
+  <!-- HEADER -->
   <header>
-    <div class="nav-container">
-      <a href="index.html" class="brand">Side Quest <span>Theatre Co.</span></a>
-      <nav aria-label="Primary Navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#schedule">Schedule</a></li>
-          <li><a href="index.html#downloads">Forms</a></li>
-          <li><a href="community.html" class="active">Community Content</a></li>
-          <li><a href="internal.html" class="nav-pill">Internal Login</a></li>
-        </ul>
+    <div class="wrap bar">
+      <a class="brand" href="index.html">Side Quest Theatre Co.</a>
+      <nav class="links" aria-label="Main navigation">
+        <a href="index.html#forms">Forms</a>
+        <a href="community.html" aria-current="page">Community Content</a>
+        <a href="index.html#internal"><strong>Internal Login</strong></a>
       </nav>
     </div>
   </header>
 
-  <section class="container">
-    <div class="section-header">
-      <p class="eyebrow">Creative Process &amp; Coursework Archive</p>
-      <h2>Community Content &amp; Process Sharing</h2>
-      <p>A shared workspace for cast, designers, and collaborators to upload and browse scenic moodboards, costume sketches, sound cues, and Winter 2027 creative work for Gaming: The Musical.</p>
-    </div>
+  <!-- MAIN CONTENT -->
+  <main class="wrap">
+    <a href="index.html">&larr; Back to Home</a>
 
-    <div class="info-card" style="margin-bottom: 1.5rem;">
-      <h3>Contribute Creative Materials</h3>
-      <p>Browse existing uploads directly in the embedded grid below, or open the shared Google Drive folder to add your own design files, rehearsal photos, and concept notes.</p>
-      <a href="https://drive.google.com/drive/folders/YOUR_SHARED_CREATIVE_FOLDER_ID" target="_blank" rel="noopener" class="btn" style="margin-top: 0.75rem;">Open Shared Folder in Drive</a>
-    </div>
+    <div class="grid">
+      <!-- BIO SUBMISSION COPY -->
+      <section id="bio">
+        <h1>Electronic Biography Submission</h1>
+        <p>Submit your full name, production role, and a 50–100 word third-person biography below to be featured in the official Playbill.</p>
+      </section>
 
-    <div class="embed-frame">
-      <!-- REPLACE YOUR_SHARED_CREATIVE_FOLDER_ID WITH YOUR SHARED DRIVE FOLDER ID -->
-      <iframe
-        title="Creative Process Shared Archive"
-        src="https://drive.google.com/embeddedfolderview?id=YOUR_SHARED_CREATIVE_FOLDER_ID#grid"
-        height="480"
-        loading="lazy">
-      </iframe>
-    </div>
-  </section>
-
-  <footer>
-    <div class="footer-inner">
+      <!-- BIO GOOGLE FORM EMBED -->
       <div>
-        <strong style="font-size: 1.15rem; color: #fff;">Side Quest Theatre Co.</strong>
-        <p style="font-size: 0.88rem; margin-top: 0.35rem;">FA/THEA 3135 Technology in Arts Management &bull; Gaming: The Musical Production Hub</p>
+        <iframe
+          class="embed bio"
+          title="Electronic Biography Submission form"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSemby3gf7OaY1U4HJRZrm21CHK6mZhkt-Rj68hFzQdFL6amtA/viewform?embedded=true"
+          width="640"
+          height="955">
+        </iframe>
+        <p class="embed-link">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSemby3gf7OaY1U4HJRZrm21CHK6mZhkt-Rj68hFzQdFL6amtA/viewform" target="_blank" rel="noopener">Open the biography form directly</a>
+        </p>
       </div>
-      <ul class="footer-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="community.html">Community Content</a></li>
-        <li><a href="internal.html">Internal Login</a></li>
-      </ul>
-    </div>
 
+      <!-- GOOGLE DRIVE ARCHIVE EMBED -->
+      <div>
+        <iframe
+          class="embed archive"
+          title="Community creative archive on Google Drive"
+          src="https://drive.google.com/embeddedfolderview?id=1midwgmT368cP60Gr6ffDybL6jZDzyeNV#grid"
+          loading="lazy" width="800"height="480">
+        </iframe>
+        <p class="embed-link">
+          <a href="https://drive.google.com/drive/folders/1midwgmT368cP60Gr6ffDybL6jZDzyeNV?usp=sharing" target="_blank" rel="noopener">Open the creative archive in Google Drive</a>
+        </p>
+      </div>
+
+      <!-- COMMUNITY CONTENT SHARING COPY -->
+      <section class="archive-copy" id="sharing">
+        <h2>Community Content Sharing</h2>
+        <p>Share sketches, photos, and process notes in the creative archive. Files are moderated regularly. Please keep sensitive or confidential information out of the archive.</p>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap bar">
+      <a class="brand" href="index.html">Side Quest Theatre Co.</a>
+      <nav class="links" aria-label="Footer navigation">
+        <a href="index.html#forms">Forms</a>
+        <a href="community.html" aria-current="page">Community Content</a>
+        <a href="index.html#internal"><strong>Internal Login</strong></a>
+      </nav>
+    </div>
   </footer>
 
 </body>

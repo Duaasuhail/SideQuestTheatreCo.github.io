@@ -14,8 +14,8 @@
       <a class="brand" href="#top">Side Quest Theatre Co.</a>
       <nav class="links" aria-label="Main navigation">
         <a href="#forms">Forms</a>
-        <a href="#community">Community Content</a>
-        <a href="#internal"><strong>Internal Login</strong></a>
+        <a href="community.html">Community Content</a>
+        <a href="internal.html"><strong>Internal Login</strong></a>
       </nav>
     </div>
   </header>
@@ -126,9 +126,9 @@
     <div class="wrap bar">
       <a class="brand" href="#top">Side Quest Theatre Co.</a>
       <nav class="links" aria-label="Footer navigation">
-        <a href="#forms">Forms</a>
-        <a href="#community">Community Content</a>
-        <a href="#internal">Internal Login</a>
+        <a href="forms.html">Forms</a>
+        <a href="community.html">Community Content</a>
+        <a href="internal.html">Internal Login</a>
       </nav>
     </div>
   </footer>
@@ -209,26 +209,6 @@
       byId('downloads').append(control);
     }
 
-    // Bio submission mailto generator
-    function draft(recipient, subject, body) {
-      location.href =
-        'mailto:' +
-        recipient +
-        '?subject=' +
-        encodeURIComponent(subject) +
-        '&body=' +
-        encodeURIComponent(body);
-    }
-
-    byId('bio').addEventListener('submit', event => {
-      event.preventDefault();
-      const fields = new FormData(event.currentTarget);
-      draft(
-        site.formsEmail,
-        'Production bio — ' + fields.get('name'),
-        [fields.get('name'), fields.get('role'), '', fields.get('bio')].join('\n')
-      );
-    });
   </script>
 </body>
 </html>
