@@ -117,8 +117,8 @@
     }
 
     .panel {
-      background: #f3eef9;
       color: var(--ink);
+      background: #fcfaff;
       border: 1px solid #ded2ec;
       border-radius: 1rem;
       padding: 1.15rem;
