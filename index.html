@@ -1,13 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
+  <meta charset="utf-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <title>Side Quest Theatre Co.</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, World!</h1>
-  <iframe src="https://calendar.google.com/calendar/embed?src=06a1986c3cb54255bbe18b10820c73b368ce7dca168087a5ed537cf9807c72bf%40group.calendar.google.com&ctz=America%2FToronto" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-  <p>This is my first webpage.</p>
+
+  <!-- HEADER -->
+  <header>
+    <div class="wrap bar">
+      <a class="brand" href="#top">Side Quest Theatre Co.</a>
+      <nav class="links" aria-label="Main navigation">
+        <a href="#forms">Forms</a>
+        <a href="#community">Community Content</a>
+        <a href="#internal"><strong>Internal Login</strong></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="top">
+
+    <!-- HERO & REHEARSAL CALENDAR -->
+    <section class="wrap" aria-labelledby="intro">
+      <p class="ticket">
+        <a class="button" id="tickets" href="#callboard"><em>Gaming: The Musical</em> &middot; Production updates</a>
+      </p>
+
+      <div class="grid intro">
+        <div>
+          <h1 id="intro">Where Gaming and Theatre Meet</h1>
+          <p>
+            Side Quest Theatre Co. is an independent performing arts collective dedicated to developing original theatrical works rooted in contemporary digital and gaming culture. Staging our flagship Winter 2027 production, <em>Gaming: The Musical</em>, we bring together performers, designers, and audiences to reimagine live stagecraft for a new generation.
+          </p>
+
+          <aside id="callboard" class="panel">
+            <h2>NOW IN PRODUCTION · Gaming: The Musical takes the stage Winter 2027. </h2>
+            <p id="announcement">Check the rehearsal calendar, download participation forms, or submit your program bio below.</p>
+          </aside>
+        </div>
+
+<section class="embed-panel" aria-labelledby="calendar-title">
+  <h2 id="calendar-title">Rehearsal Calendar</h2>
+  <iframe
+    class="calendar-embed"
+    title="Side Quest Theatre rehearsal calendar"
+    src="https://calendar.google.com/calendar/embed?src=06a1986c3cb54255bbe18b10820c73b368ce7dca168087a5ed537cf9807c72bf%40group.calendar.google.com&amp;ctz=America%2FToronto"
+    width="800"
+    height="600">
+  </iframe>
+</section>
+      </div>
+    </section>
+
+    <!-- VENUE, HOURS & MANAGEMENT CONTACT -->
+    <section class="purple">
+      <div class="wrap grid">
+        <iframe
+          class="map"
+          title="Map of the Kitchener rehearsal address"
+          loading="lazy"
+          src="https://maps.google.com/maps?q=101%20Queen%20St%20N%2C%20Kitchener%2C%20ON&output=embed">
+        </iframe>
+
+        <div>
+          <h2>Rehearsal Hours</h2>
+          <p>
+            <strong>Weekdays</strong> 10:00 a.m. – 10:00 p.m.<br />
+            <strong>Weekends</strong> 12:00 p.m. – 8:00 p.m.
+          </p>
+          <h2>Address</h2>
+          <p>101 Queen St N, Kitchener, ON N2H 6P7</p>
+        </div>
+
+        <div class="people">
+          <h2>Contact Us</h2>
+          <p>
+            <strong>Telephone:</strong> <a href="tel:+15199822145">519-982-2145</a><br />
+            <strong>Email:</strong> <a id="general-email"></a>
+          </p>
+
+          <h2>Want to Talk to Our Management?</h2>
+          <p><strong>Executive Director:</strong> Duaa Suhail<br /><a href="mailto:duaasuhail@sidequesttheatre.org">duaasuhail@sidequesttheatre.org</a></p>
+          <p><strong>Technical Director:</strong> Grazielle Arcamo<br /><a href="mailto:grazielle@sidequesttheatre.org">grazielle@sidequesttheatre.org</a></p>
+          <p><strong>Marketing Director:</strong> Opal P<br /><a href="mailto:opalp@sidequesttheatre.org">opalp@sidequesttheatre.org</a></p>
+          <p><strong>Production Stage Manager:</strong> Monica Paras<br /><a href="mailto:Monicaparas@sidequesttheatre.org">Monicaparas@sidequesttheatre.org</a></p>
+        </div>
+
+        <section id="contact" class="panel embed-panel" aria-labelledby="contact-title">
+          <h2 id="contact-title">Contact Management</h2>
+          <iframe
+            class="form-embed"
+            title="Contact Management Google Form"
+            src="https://docs.google.com/forms/d/e/1FAIpQLScEqwnAEkMRFfVzzQmoKlDfYaGEFTQtVEUb_Npuo9L6aPBn8w/viewform?embedded=true"
+            width="640"
+            height="687"
+            loading="lazy">
+            Loading…
+          </iframe>
+          <p class="form-note">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScEqwnAEkMRFfVzzQmoKlDfYaGEFTQtVEUb_Npuo9L6aPBn8w/viewform" target="_blank" rel="noopener">Open the form directly</a>
+          </p>
+        </section>
+      </div>
+    </section>
+
+    <!--  DOWNLOAD FORMS -->
+    <section class="wrap center" id="forms">
+      <h2>Forms</h2>
+      <img src="images/unsplash_dGKqti2r08k.png" alt="Unsplash theatre photo' />
+      <p>Download participation and release forms. Email completed PDFs with your full name to <a id="forms-email"></a>.</p>
+        <div class="buttons" id="downloads">
+            <a class="button" id="risk-release" href="downloads/Risk and Release Form.pdf" download>Risk and Release Form</a>
+            <a class="button" id="volunteer" href="downloads/Volunteer Form.pdf" download>Volunteer Form</a>
+            <a class="button" id="video-photo-release" href="downloads/Video Photo Release Form.pdf" download>Video Photo Release Form</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap bar">
+      <a class="brand" href="#top">Side Quest Theatre Co.</a>
+      <nav class="links" aria-label="Footer navigation">
+        <a href="#forms">Forms</a>
+        <a href="#community">Community Content</a>
+        <a href="#internal">Internal Login</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- CONFIGURATION SCRIPT -->
+  <script>
+    // Edit these settings before publishing. Use a restricted folder for private documents.
+    const site = {
+      managementEmail: 'sidequests@sidequesttheatre.org',
+      formsEmail: 'forms@sidequesttheatre.org',
+      announcement: ' Check the rehearsal calendar, download participation forms, or submit your program bio below.',
+      ticketUrl: '',
+      photo: '', // e.g. 'assets/theatre.jpg'
+      communityUrl: '', // Paste your shared Google Drive folder URL here
+      internalUrl: '',  // Paste your restricted Google Drive folder URL here (shared with officehours@toasterlab.com)
+      downloads: [
+        { title: 'Risk and Release Form', path: './downloads/risk-and-release-form.pdf' },
+        { title: 'Volunteer Form', path: './downloads/volunteer-form.pdf' },
+        { title: 'Video Photo Release Form', path: './downloads/video-photo-release-form.pdf' }
+      ]
+    };
+
+    const byId = id => document.getElementById(id);
+
+    // Populate announcement
+    byId('announcement').textContent = site.announcement;
+
+    // Populate email links
+    for (const [id, address] of [
+      ['general-email', site.managementEmail],
+      ['forms-email', site.formsEmail]
+    ]) {
+      byId(id).textContent = address;
+      byId(id).href = 'mailto:' + address;
+    }
+
+    // Populate Community & Internal Drive links
+    for (const [id, url] of [
+      ['community', site.communityUrl],
+      ['internal', site.internalUrl]
+    ]) {
+      if (!url) continue;
+      byId(id + '-link').href = url;
+      byId(id + '-link').hidden = false;
+      byId(id + '-note').hidden = true;
+    }
+
+    // Optional Ticket URL override
+    if (site.ticketUrl) {
+      byId('tickets').href = site.ticketUrl;
+      byId('tickets').textContent = 'Get tickets · Gaming: The Musical';
+    }
+
+    // Optional Theatre Photo
+    if (site.photo) {
+      byId('theatre-photo').src = site.photo;
+      byId('theatre-photo').hidden = false;
+    }
+
+    // Render PDF download buttons
+    const downloadNote = byId('download-note');
+    downloadNote.hidden = site.downloads.every(item => item.path);
+
+    for (const item of site.downloads) {
+      const control = document.createElement(item.path ? 'a' : 'button');
+      control.className = 'button';
+      control.textContent = item.title;
+
+      if (item.path) {
+        control.href = item.path;
+        control.download = '';
+      } else {
+        control.type = 'button';
+        control.addEventListener('click', () => {
+          downloadNote.textContent = item.title + ' is coming soon.';
+        });
+      }
+      byId('downloads').append(control);
+    }
+
+    // Bio submission mailto generator
+    function draft(recipient, subject, body) {
+      location.href =
+        'mailto:' +
+        recipient +
+        '?subject=' +
+        encodeURIComponent(subject) +
+        '&body=' +
+        encodeURIComponent(body);
+    }
+
+    byId('bio').addEventListener('submit', event => {
+      event.preventDefault();
+      const fields = new FormData(event.currentTarget);
+      draft(
+        site.formsEmail,
+        'Production bio — ' + fields.get('name'),
+        [fields.get('name'), fields.get('role'), '', fields.get('bio')].join('\n')
+      );
+    });
+  </script>
 </body>
 </html>
